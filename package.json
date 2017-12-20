@@ -1,0 +1,31 @@
+{
+  "name": "xy-inc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "test": "./node_modules/.bin/jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ismael-lima/xy-inc.git"
+  },
+  "author": "ismael lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ismael-lima/xy-inc/issues"
+  },
+  "homepage": "https://github.com/ismael-lima/xy-inc#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "~4.16.2",
+    "express-load": "^1.1.16",
+    "mongodb": "^3.0.0-rc0",
+    "mongoose": "^4.13.7",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
