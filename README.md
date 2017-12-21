@@ -5,46 +5,72 @@ Para executar o sistema é necessário alterar os arquivos:
 -/config/database.js, para alterar os dados do banco
 
 para iniciar os serviços utilizar o comando:
+
 npm start
 
-para iniciar os testes, é necessário alterar o nome do banco de dados e os servicos não podem estar iniciados. utilizar o comando?
+
+
+para iniciar os testes, é necessário alterar o nome do banco de dados e os servicos não podem estar iniciados. utilizar o comando:
+
 npm test
 
 
+
 Os serviços disponiveis são:
+
 
 
 Inserção de dados:
 
 POST /ponto
 parametros de entrada(todos os campos são obrigatórios):
+
 nome : string com o nome do local
+
 x : inteiro não negativo com a coordenada em X
+
 y : inteiro não negativo com a coordenada em Y
 
+
+
+
 parametros de saida:
+
 success: true se o registro for inserido com sucesso e false caso haja algum problema
+
 message: mensagem caso não tenha sido inserido o registro
+
+
 
 
 Listagem de dados:
 
 GET /ponto
+
 parametros de saida:
+
 array com os dados da localidade (nome, x, y)
+
+
 
 
 Listagem de localidades na proximidade:
 
 POST /ponto/proximidade
+
 parametros de entrada(todos os campos são obrigatórios):
+
 distancia : inteiro não negativo com a distancia máxima do ponto de referencia
+
 x : inteiro não negativo com a coordenada em X do ponto de referencia
+
 y : inteiro não negativo com a coordenada em Y do ponto de referencia
 
+
+
+
 parametros de saida:
+
 success: true se possivel realizar a busca com sucesso e false caso haja algum problema
+
 lista: array com os dados da localidade (nome, x, y)
-
-
-
