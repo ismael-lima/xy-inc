@@ -8,8 +8,6 @@ module.exports = (app)=>{
             .then((pontos) =>{
                 res.json(pontos);
             });
-            
-
         },
         inserir: (req, res)=>{
             console.log(req.body);
@@ -30,9 +28,8 @@ module.exports = (app)=>{
                     }
                 })
             }
-
         },
-        proximidade: (req, res) =>{
+        pontosproximos: (req, res) =>{
             console.log(req.body);
             let item = req.body;
             if((item.distancia < 0) || (item.x<0) || (item.y <0)){
