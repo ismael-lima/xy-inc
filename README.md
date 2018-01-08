@@ -53,7 +53,7 @@ O sistema foi desenvolvido com o NodeJs e utiliza o banco de dados MongoDB.
 
 ### Listagem de localidades na proximidade:
 
-**POST /ponto/proximidade**
+**POST /ponto/pontosproximos**
 
 **parametros de entrada(todos os campos são obrigatórios):**
 
