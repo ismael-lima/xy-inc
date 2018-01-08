@@ -6,7 +6,7 @@ module.exports =  (app) => {
     
     pontosRouter.get('/', controller.listar);
     pontosRouter.post('/', controller.inserir);
-    pontosRouter.post('/proximidade', controller.proximidade);
+    pontosRouter.post('/pontosproximos', controller.pontosproximos);
     pontosRouter.get('/clear', controller.limpar);
     
     app.use('/ponto', pontosRouter);
